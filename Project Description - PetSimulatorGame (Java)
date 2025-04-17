@@ -1,0 +1,33 @@
+This is a simple console-based game I made in Java where you take care of your own virtual pet. You can name your pet and choose actions like feeding, playing, or letting it sleep. Each action affects your pet's hunger, happiness, and energy, and your goal is to keep it alive and happy for as long as you can.
+
+If your pet gets too hungry, too tired, or too sad, the game ends—but don’t worry, you can choose to restart and take better care next time.
+
+Features:
+
+Custom pet name
+
+Action choices using numbers (1 to 3)
+
+Stats update after every action
+
+Natural stat changes over time (like hunger increasing)
+
+Game over and restart system
+
+Input handling with Scanner
+
+Basic use of if conditions and loops
+
+What I Learned:
+
+I made this project to improve my Java skills and understand how a game loop works. I learned a lot about:
+
+How while loops can keep a game running
+
+The importance of using gameRunning = false to stop infinite loops
+
+How equalsIgnoreCase() can handle user input without case sensitivity problems
+
+Why it’s important to close Scanner to avoid resource leaks
+
+And just how small typos or capitalization issues can break a program 😅
