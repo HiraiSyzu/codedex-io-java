@@ -1,0 +1,78 @@
+Syzu 4/17/25
+
+Well as a beginner in java, i made this my first ever project using this programming language with a help of ChatGPT
+i didn't fully relied on ai i did just used it to ask something, ask idea and to debug to know if there's any problem in my code
+This my own explanation, on how clearly i understand the project that i've created
+
+firstly the import, it is used so the user can freely choose any option on what they want. and the 
+int hunger 5
+int  happiness 5
+int energy  5
+their respectively value is 5 
+
+and now the boolean gameRunning = true; this used to control the loop
+
+next is the Scanner scanner = new scanner(System.in) used to declare the Scanner object
+
+now the println  used to get the pet's name entered by user
+
+then string petName = scanner.nextLine() // used to get the user's pet name after the user 
+
+now while (gameRunning && hunger < 10 && happiness > 0 && energy > 0) {} // And also another explanation on why i did use happiness <= 0 rather than happiness < 0. Because so the game ends as soon hunger reaches 10.
+the meaning of this is loop will continue until the gameRunning will be false and the hunger will be greater than 10 and happiness become less than 0 and energy become less than to 0,
+
+and the current pet's stats i do not need to explain it because i clearly understand it 
+
+next is the int choice = scanner.nextInt(); this is used so user can simply just choose their option just by 1 2 3 rather than typing the whole choice
+scanner.nextline(); used to get the user's actions input  // Another explanation here is to prevent any bugs when switching from number input to text input ( And also clears leftover newline).
+
+next is the if loop so basically if user choose 1 (Choice == 1) {
+this is the feed your pet choice
+happiness += 1 it will increased the happiness by 1
+energy -= 1  it will decreased the pet energy by 1
+
+then it will print you feed + petName + hunger decreased by 1
+} if user choose 2 else if (choice == 2) {
+ this is the number2 choice, the play with pet
+ happiness += 1 increased the happiness by 1
+ energy -= 1 decreased energy by 1
+
+then it will print you played with your pet. Happiness increased by 1
+next is the choice 3 else if (choice == 3)
+which is the pet sleep option
+energy += 2 ; // Increase energy by 2
+
+then it will print your pet petName is sleeping... Energy increased by 2
+
+and lastly the else{} if user choice isnt in option it will print Invalid output.. please try again
+
+then another output updated stats after any action but before hunger increase i do not need to explain it cause i also clearly understand it like it this will be the final stat after the choice and the logic is overtime  is
+Another thing on why i printed updated stats before hunger increases, because to show the user the result of their action before time passes
+hunger += 1; Hunger naturally decreased over time
+happiness -= 1; happiness naturally decreased over time
+energy -=1; Energy naturally decreased over time 
+
+and another print method i do not need to explain this also as i clearly understand this specific block of code
+
+then proceed to if loop now
+this if loop will used to check game over condition continue. if the user still want to continue after the game over
+so basically, if (hunger >= 10 || happiness  <= 0 || energy <= 0) {} 
+which means  if either any of hunger, happiness, energy become false it will be game over
+so example if hunger become 10 11 12 13.... and happiness become 0 -1 -2 -3 .... and also energy become 0 -1 -2 -3 ......... then it will be game over  and next code which is
+the print method, here the user will be ask if they would like to continue because its game over if either of the stat become false and they will input yes or no, So here's problem since in programming strictly the capitalization of words and letters is strictly need to be exactly like basically if you put INT variable and BOOLEAN and SYSTEM.out.println.. this will not be accepted by computer and they will be ask Yes/No which means they need to type the exact Yes/No.. if they input yes/no rather than of it then the programm will not accept it so my solution is 
+i will use another if loop that uses if(answer.equalsIgnoreCase("Yes") so this perfectly fixed so it will solve the problem.. so user if they input Yes or yes and No or no the code will accept it because of that answer.equalIgnoreCase
+and another thing inside of that if loop after the user decided to choose yes then the game will continue so it will reset the stats
+hunger = 5
+happiness = 5
+energy = 5
+and also we will make the value of gameRunning is true so to make sure that the game will still continue
+and next code is will print Starting new game
+and the else{} if user choose (No or no)
+it will print game over! thank you for playing with + petName +  " You are the Best !!!!!"
+after that code, we will secure it by gameRunning = false so the code will stop. if we didnt used execute this block of code, based on my experience it will infinitely run print not allowing user to put input and it will ruin the code so this block of code is important 
+and we will use break; to exit the loop immediately when its over // Another explanation here on why break is used after using  gameRunning = false. It is for to immediately stop the loop and avoid any futher code for running as i experienced that i didnt use this block of code. It didnt stop the loop and it constantly running unecessary code and eventually my code ruined, So it is importnat to used break after the gameRunning in this code
+
+and lastly the we will need to close the scanner so the resource wont leak, we will use scanner.close() this way the scanner will be close.
+
+this is all of my understanding in my code.. :>
+}
