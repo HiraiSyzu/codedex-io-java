@@ -1,33 +1,44 @@
-This is a simple console-based game I made in Java where you take care of your own virtual pet. You can name your pet and choose actions like feeding, playing, or letting it sleep. Each action affects your pet's hunger, happiness, and energy, and your goal is to keep it alive and happy for as long as you can.
+# 🐾 Pet Simulator Game (Java Console)
 
-If your pet gets too hungry, too tired, or too sad, the game ends—but don’t worry, you can choose to restart and take better care next time.
+This is a simple pet simulator I made using Java. It runs in the console. You can name your pet, then take care of it by feeding, playing, or letting it sleep. But be careful — if hunger gets too high, or happiness or energy gets too low, it's game over.
 
-Features:
+## 🎮 Features
 
-Custom pet name
+- You can give your pet a name
+- Pick between 3 actions: Feed, Play, or Sleep
+- Pet stats change every turn
+- If any stat goes too far, the game ends
+- You can choose to continue or stop playing
+- Uses only basic stuff like loops and ifs — no OOP or methods yet
+- Scanner is closed properly so there’s no resource leak
 
-Action choices using numbers (1 to 3)
+## 🔧 How the game works
 
-Stats update after every action
+You start with:
 
-Natural stat changes over time (like hunger increasing)
+- Hunger = 5  
+- Happiness = 5  
+- Energy = 5  
 
-Game over and restart system
+Each action affects the stats. For example:
 
-Input handling with Scanner
+- Feeding lowers hunger but drains energy  
+- Playing makes your pet happy but tires it out  
+- Sleeping gives back energy  
 
-Basic use of if conditions and loops
+After your action, time passes and hunger goes up, happiness and energy go down. So you gotta balance it.
 
-What I Learned:
+If hunger hits 10, or happiness or energy drop to 0, the game ends. But you can choose to restart the game if you want.
 
-I made this project to improve my Java skills and understand how a game loop works. I learned a lot about:
+## 💭 Why I made this
 
-How while loops can keep a game running
+I made this to practice Java, especially loops, conditionals, and using Scanner. I had bugs like infinite loops and stuff, but I figured it out. This helped me understand how code flows and how even small typos can break the whole thing.
 
-The importance of using gameRunning = false to stop infinite loops
+## ▶️ How to run
 
-How equalsIgnoreCase() can handle user input without case sensitivity problems
+1. Copy the code to a file named `PetSimulatorGame.java`  
+2. Open terminal or cmd  
+3. Compile it using: `javac PetSimulatorGame.java`  
+4. Run it with: `java PetSimulatorGame`  
 
-Why it’s important to close Scanner to avoid resource leaks
-
-And just how small typos or capitalization issues can break a program 😅
+That’s it. Hope you like it 🐶
