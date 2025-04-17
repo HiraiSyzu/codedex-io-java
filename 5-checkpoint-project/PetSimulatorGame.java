@@ -1,4 +1,7 @@
 // Syzu 4/13/25
+// PetSimulatorGame.java
+// A Simple text-based pet simulator game where you can feed, play, and let your pet sleep.
+
 import java.util.Scanner;
 
 public class PetSimulatorGame {
@@ -19,16 +22,18 @@ public class PetSimulatorGame {
     String petName = scanner.nextLine(); // Get the user's pet name 
     
     while (gameRunning && hunger < 10 && happiness > 0 && energy > 0) {
+
       // Current pet's Stats
       System.out.println("Your pet " + petName + " current hunger :" + hunger + "/10");   // Pet's Hunger
-      System.out.println("\n");
+      System.out.println(); // new line
       System.out.println("Your pet " + petName + " current happiness :" + happiness + "/10"); //Pet's Hapiness
-      System.out.println("\n");
+      System.out.println(); // new line
       System.out.println("Your pet " + petName + " current energy  :" + energy + "/10"); // Pet's Energy
-      System.out.println();
+      System.out.println(); // new
       
       // Action options
       System.out.println("What do  you want to do? (Choose from 1 - 3)");
+      System.out.println(); // new line
       System.out.println("1. Feed your pet");
       System.out.println("2. Play with your pet");
       System.out.println("3. Let your pet sleep");
@@ -61,16 +66,25 @@ public class PetSimulatorGame {
       } else {
         System.out.println("Invalid Output..... Please Try again");
       }
+      
+        // Print updated stats AFTER action but BEFORE hunger increase
+        System.out.println("Stats after action:");
+        System.out.println("Hunger: " + hunger + "/10");
+        System.out.println("Happiness: " + happiness + "/10");
+        System.out.println("Energy: " + energy + "/10");
+        System.out.println();
 
-        // Print updated stats
-      System.out.println("Updated hunger: " + hunger + "/10");
-      System.out.println("Updated happiness: " + happiness + "/10");
-      System.out.println("Updated energy: " + energy + "/10");
-      System.out.println();
+        hunger += 1; // Hunger naturally increases 
+        happiness -= 1; // pet get less happy over time
+        energy -= 1; // Pet gets tired over time
 
-        // Hunger naturally increased
-        hunger += 1; // Changed to increase hunger
-
+        System.out.println("Time Passes");
+        System.out.println(petName + " Is getting hungry! Hunger increased to : " + hunger + " /10");
+        System.out.println(petName + " Is getting a bit bored! Happiness decreased to : " + happiness + " /10");
+        System.out.println(petName + " Is getting tired! Energy decreased to : " + energy + " /10");
+        System.out.println();
+      
+  
        // Check game over conditions continue (Yes/No)
         if (hunger >= 10 || happiness <= 0 || energy <= 0) {
          System.out.println("Game Over! Would you like to continue (Yes/No): ");
@@ -84,7 +98,7 @@ public class PetSimulatorGame {
          gameRunning = true; // Make sure gameRunning is true
          System.out.println("Starting new game");
          } else {
-          System.out.println("Game Over! Thank for playing with " + petName + " You are the best !!!!!");
+          System.out.println("Game Over! Thank for playing with " + petName +  " You are the best !!!!!");
           gameRunning = false;
           break; // Added break to exit the loop immediately
          }
