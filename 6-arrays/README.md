@@ -4,6 +4,8 @@ Full Exercises with my own version in Java: Array, Method, Classes and Objects
 Syzu 4/18/25
 
 💾 21. Survival Pack
+
+
 🧠 What’s Going On:
 You’re getting ready for a zombie apocalypse (yeah, wild, I know). You’ve packed some must-have survival items in your bag.
 
