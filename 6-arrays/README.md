@@ -11,13 +11,13 @@ You’re getting ready for a zombie apocalypse (yeah, wild, I know). You’ve pa
 
 In this exercise, you’ll learn how to create and use a string array in Java — basically, a container where you can store multiple pieces of data (strings) under one variable name.
 
-🔧 What You Need to Do:
+**🔧 What You Need to Do:**
 Create a String array called survivalPack.
 
 Put 5 different items inside it — these can be any items you think would help in a survival situation (Water Bottle, First Aid Kit, Flashlight, 
 Energy Bars, Knife).
 
-📘 Notes & Tips:
+**📘 Notes & Tips:**
 In Java, array indexing starts at 0, not 1.
 
 So:
