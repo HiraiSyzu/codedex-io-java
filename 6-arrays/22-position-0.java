@@ -12,7 +12,7 @@ public class HelloWorld {
 
     System.out.println("Treasure Item : " + treasureChest[0]); // Print: Gold Coin
     System.out.println("Treasure Item : " + treasureChest[2]); // Print: Silver Ring
-    System.out.println("Treasure ITem : " + treasureChest[5]); // Print: Diamond Crown
+    System.out.println("Treasure Item : " + treasureChest[5]); // Print: Diamond Crown
     System.out.println("Treasure Item : " + treasureChest[4]); // Print: Ancient Map
     System.out.println("Treasure Item : " + treasureChest[6]); // Print: Ruby
     System.out.println("Treasure Item : " + treasureChest[8]); // Print: Treasure Map
