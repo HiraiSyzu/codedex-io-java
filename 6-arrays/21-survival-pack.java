@@ -11,13 +11,6 @@ public class HelloWorld {
 
     // String Array
     String [] survivalPack = {"Water Bottle", "First Aid Kit", "Flashlight", "Energy Bars", "Knife"};
-
-    //Println Method
-    System.out.println(survivalPack[0]); // Print: "Water Bottle"
-    System.out.println(survivalPack[1]); // Print: "First Aid Kit"
-    System.out.println(survivalPack[2]); // Print: "Flashlight"
-    System.out.println(survivalPack[3]); // Print: "Energy Bars"
-    System.out.println(survivalPack[4]); // Print: "Knife"
   }
 }
 
