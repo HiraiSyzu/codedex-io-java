@@ -10,3 +10,4 @@ Another thing in this java course, since i cannot access the Arrays, Methods, an
 Well, i cannot avail premium in codedex since im underage...
 
 
+[View Exercise 21 - Survival Pack](./21-survival-pack.java)
