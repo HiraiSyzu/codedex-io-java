@@ -3,7 +3,7 @@ Full Exercises with my own version in Java: Array, Method, Classes and Objects
 
 Syzu 4/18/25
 
-#💾 21. Survival Pack
+# 💾 21. Survival Pack
 
 
 🧠 What’s Going On:
