@@ -6,7 +6,7 @@ Syzu 4/18/25
 # 💾 21. Survival Pack
 
 
-🧠 What’s Going On:
+# 🧠 What’s Going On:
 You’re getting ready for a zombie apocalypse (yeah, wild, I know). You’ve packed some must-have survival items in your bag.
 
 In this exercise, you’ll learn how to create and use a string array in Java — basically, a container where you can store multiple pieces of data (strings) under one variable name.
