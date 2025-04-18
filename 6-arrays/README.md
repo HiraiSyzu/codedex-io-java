@@ -18,4 +18,4 @@ So:
 survivalPack[0] → first item
 survivalPack[4] → fifth item
 
-21. Survival Pack - [View Exercise 21 - Survival Pack](./21-survival-pack.java)
+21. Survival Pack - <a href="./21-survival-pack.java" style="text-decoration: underline;">Survival Pack Exercise 21</a>
