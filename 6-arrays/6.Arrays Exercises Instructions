@@ -17,3 +17,5 @@ In Java, array indexing starts at 0, not 1.
 So:
 survivalPack[0] → first item
 survivalPack[4] → fifth item
+
+21. Survival Pack - [View Exercise 21 - Survival Pack](./21-survival-pack.java)
