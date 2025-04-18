@@ -40,7 +40,7 @@ This is a great way to practice working with arrays and understanding how array 
 ### 🔧 What You Need to Do:
 Create a **String array** that holds several items (Gold Coin, Emerald, Silver Ring, Ruby Necklace, Ancient Map, Diamond Crown, Ruby, Golden Katana, Treasure Map).
 
-Your task is to print out the first item (position 0) of the array.
+Your task is to print out the  items that u want from treasure chest.
 
 ### 📘 Notes & Tips:
 - Remember, in **Java**, **arrays start at index 0**.
