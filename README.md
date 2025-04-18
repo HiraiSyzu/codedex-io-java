@@ -9,4 +9,4 @@ Another thing in this java course, since i cannot access the Arrays, Methods, an
 
 Well, i cannot avail premium in codedex since im underage...
 
-https://github.com/codedex-io/java-101/blob/main/1-hello-world/02-hello-world.java
+
