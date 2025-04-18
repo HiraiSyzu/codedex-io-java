@@ -24,4 +24,4 @@ So:
 survivalPack[0] → first item
 survivalPack[4] → fifth item
 
-21. Survival Pack - <a href="./21-survival-pack.java" style="text-decoration: underline;">Survival Pack Exercise 21</a>
+ ## 21. Survival Pack - <a href="./21-survival-pack.java" style="text-decoration: underline;">Survival Pack Exercise 21</a>
