@@ -2,7 +2,7 @@
 // PetSimulatorGame.java
 // A Simple text-based pet simulator game where you can feed, play, and let your pet sleep.
 
-import java.util.Scanner;
+import java.util.Scanner; // Used to access the Scanner Class
 
 public class PetSimulatorGame {
   public static void main(String[] args) {
@@ -13,9 +13,9 @@ public class PetSimulatorGame {
     int energy = 5;
 
     //Setting gameRunning Value
-    boolean gameRunning = true;
+    boolean gameRunning = true; 
 
-    Scanner scanner = new Scanner(System.in); // Declare Scanner Object
+    Scanner scanner = new Scanner(System.in); // This is used Declare Scanner Object
 
     System.out.println("What is Your Pet's Name"); // User's Pet's Name
 
@@ -34,21 +34,21 @@ public class PetSimulatorGame {
       // Action options
       System.out.println("What do  you want to do? (Choose from 1 - 3)");
       System.out.println(); // new line
-      System.out.println("1. Feed your pet");
+      System.out.println("1. Feed your pet"); 
       System.out.println("2. Play with your pet");
       System.out.println("3. Let your pet sleep");
 
       int choice = scanner.nextInt();
       scanner.nextLine(); // Get the user's Actions
 
-      if (choice == 1) {
+      if (choice == 1) { // If user choose 1
         // Feed the pet
         hunger -= 1; // Decrease hunger by 1
         energy -= 1; // Decrease energy by 1
 
         System.out.println("You fed " + petName + " Hunger decreased by 1!");
 
-      } else if (choice == 2) {
+      } else if (choice == 2) {  // If user choose 2
 
         // Play with the pet
         happiness += 1; // Increase happiness by 1
@@ -56,7 +56,7 @@ public class PetSimulatorGame {
 
         System.out.println("You played with your pet. Happiness increased by 1!");
 
-      } else if (choice == 3) {
+      } else if (choice == 3) { // If user choose 3
         // Let the pet sleep
 
         energy += 2; // Increase energy by 2
@@ -104,6 +104,6 @@ public class PetSimulatorGame {
          }
         }
     }
-    scanner.close(); // //Will Close the Scanner
+    scanner.close(); // // This is important so the resource of scanner wont leak
   }
 }
