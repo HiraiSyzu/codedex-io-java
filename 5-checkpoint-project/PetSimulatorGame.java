@@ -47,6 +47,7 @@ public class PetSimulatorGame {
         energy -= 1; // Decrease energy by 1
 
         System.out.println("You fed " + petName + " Hunger decreased by 1!");
+        System.out.println(petName + "Used some energy. Energy decreased by 1!");
 
       } else if (choice == 2) {  // If user choose 2
 
@@ -55,7 +56,7 @@ public class PetSimulatorGame {
         energy -= 1; // Decrease energy by 1
 
         System.out.println("You played with your pet. Happiness increased by 1!");
-
+        System.out.println(petName + "Used some energy. Energy decreased by 1!");
       } else if (choice == 3) { // If user choose 3
         // Let the pet sleep
 
@@ -90,11 +91,13 @@ public class PetSimulatorGame {
          System.out.println("Game Over! Would you like to continue (Yes/No): ");
          String answer = scanner.nextLine();
          
-         if (answer.equalsIgnoreCase("Yes")) {
+         if (answer.equalsIgnoreCase("Yes")) { // We used this function so no matter what capitalization the user input, the code still will accept it
+
+        // If user wants to continue the game
          //Resets the score and continue the game
-         hunger = 5;
-         happiness = 5;
-         energy = 5;
+         hunger = 5; // Pet's Hunger
+         happiness = 5; // Pet's Happiness
+         energy = 5; // Pet
          gameRunning = true; // Make sure gameRunning is true
          System.out.println("Starting new game");
          } else {
