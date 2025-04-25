@@ -13,11 +13,11 @@ public class test {
     
     for(int i = 0; i < keys.length; i++) { // To check if 60 is in array, i used this for loop. It will start from  the first number int i = 0 and it continues until it reaches the end which is the(keys.length).
   
-      // Another thing thing the meaning of (keys.length) is it used to get the length of our array, how many elements are inside 
+      // Another thing the function of (keys.length) is  used to get the length of our array, how many elements are inside 
       
       // So my array is keys.length number is 12 numbers inside the array, so it would return 12 numbers since i have 12 elements inside my array
 
-      if (keys[i] == 60) { // I used nested if loop inside the for loop t check if the current number (keys[i]) is equal to 60.
+      if (keys[i] == 60) { // I used nested if loop inside the for loop to check if the current number (keys[i]) is equal to 60.
         System.out.println("Congratulations!!... You found the key.........."); // It will print this if its equal to 60
         break; // i used this break statement to so the loop exits immediately once it found the key
       } 
